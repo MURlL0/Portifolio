@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="profile">
+      <h1>Login</h1>
+      <form name="login" onsubmit="event.preventDefault(); validar()">
+
+        <div class="input-box">
+
+          <input name="email" type="email" placeholder="E-mail">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+        <div class="input-box">
+
+          <input name="password" type="password" placeholder="Senha">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <div class="remember">
+          <input type="checkbox">Remember Me <a href="#">Forget password</a>
+        </div>
+
+        <button type="onclick">Log in</button>
+        <p>Don't have a account <a href="#">Register</a></p>
+      </form>
+
+
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

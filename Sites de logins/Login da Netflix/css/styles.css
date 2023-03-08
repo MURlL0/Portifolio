@@ -1,0 +1,101 @@
+
+body{
+  background-image: url(../Image/BR-pt-20230130-popsignuptwoweeks-perspective_alpha_website_large.jpg) ;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.foto-logo{
+  justify-content: left;
+  background-image: url(../Image/580b57fcd9996e24bc43c529.png);
+  height: 130px;
+  width: 210px;
+  margin-right: 23px;
+  margin-top: -24px;
+  margin-bottom: -21px; 
+}
+
+.box{
+  padding: 60px 68px 40px;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  background-color: rgba(0, 0, 0, 0.856);
+
+  
+}
+
+.container{
+  padding: 60px 60px 68px 40px;
+  display: block;
+  margin: 0px 0px 90px;
+  
+  
+   
+  border-radius: 4px;
+  margin-top: 2px;
+  padding-top: 90px;
+  padding-bottom: 400px;
+  justify-content: center;
+  display: flex;
+  align-items: center;  
+}
+
+.login{
+  padding: 0px 150px;
+  justify-content: left;
+}
+
+.entra{
+  color: white;
+  font-size: 32px;
+
+}
+
+.usuario {
+  background-color: rgb(56, 56, 56);
+  border-radius: 4px;
+  width: 325px;
+  height: 50px;
+  color: darkgray;
+  border-style: none;
+  margin-top: 50px;
+  font-size: 17px;
+}
+
+.senha{ 
+  background-color: rgb(56,56,56);
+  border-radius: 4px;
+  width: 325px;
+  height: 50px;
+  color: darkgray;
+  border-style: none;
+  font-size: 17px;
+  margin-top: -7px;
+}
+
+.btn-danger{
+  width: 325px;
+  height: 50px;
+  border-radius: 4px;
+  border-style: none;
+  margin-top: 15px;
+  font-size: 17px;
+
+}
+
+.rodape{
+  padding-top: 240px;
+  background-color: rgba(0, 0, 0, 0.856);
+  margin-bottom: -20px;
+  margin-top: 90px;
+  color:darkgray;
+}
+
+.artigo-rodape{
+  margin-top: -200px;
+  margin-left: 260px;
+  position: absolute;
+}

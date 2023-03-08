@@ -1,0 +1,113 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;  
+}
+
+body{
+  background-image: url(../img/1161907.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile{  
+  text-align: center;
+  width: 400px;
+  height: 450px;
+  padding: 40px 40px;
+  display: block;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.input-box{
+  outline: none;
+  margin-top: 10px;   
+  color: white;
+  position:relative;
+}
+
+.input-box input{
+  background: transparent;
+  width: 280px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+h1 :hover{
+  box-shadow: 0 0 20px white;
+}
+
+.input-box ion-icon{
+  position: absolute;
+  right: 21px;
+  top: 40%;
+}
+
+
+.input-box ::placeholder{
+  color: white;
+}
+
+.remember{
+  padding: 15px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+input[type="checkbox"]{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+button{
+  width: 240px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: 1.0s ;
+}
+
+button:hover{ 
+  box-shadow: 0 0 10px white;
+  width: 250px;
+  height: 45px;
+  transition: .5s ;
+  font-size: 18px;
+}
+
+p{
+  padding: 15px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+
+
+
