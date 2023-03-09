@@ -3,7 +3,7 @@ function validar() {
         document.getElementById("result").innerHTML = "Enter Username";
         return false;
     }
-    if (document.login.user.value.length <6) {
+    if (document.login.user.value.length < 6) {
         document.getElementById("result").innerHTML = "enter 6 digits minimum";
         return false;
     }
@@ -28,4 +28,13 @@ function validar() {
         document.getElementById("result").innerHTML = "Different password";
         return false;
     }
+    if (document.login.password.value == document.login.cpassword.value) {
+        popup.classList.add("open-slide");
+        return false;
+    }
+}
+
+const popup = document.getElementById("popup");
+function closeSlide() {
+    popup.classList.remove("open-slide");
 }
