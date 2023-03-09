@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://media.giphy.com/media/elzCnIQAjQMWA/giphy.gif);
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  color: rgb(255, 255, 255);
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+  padding: 40px;  
+  opacity: 0;
+  transition: 6.0s;
+}
+.container:hover {
+  backdrop-filter: blur(20px);
+  opacity: 1;
+  transition: 2.0s ease-in-out;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0 10px 2px white;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.title{
+  margin-bottom: 20px;
+  margin-top: 20px; 
+}
+
+.input-box{
+  margin-top: 10px;
+  position: relative;
+}
+
+.input-box input{
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: white;
+  font-size: 15px; 
+}
+
+.input-box input::placeholder{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 10px;
+}
+
+ion-icon{
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+
+#result{
+  color: rgb(153, 255, 0);
+  font-weight: 100;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px white;
+  font-size: 15px;
+  transition: 1.5s;
+}
+
+button{
+  margin-top: 30px;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(154, 250, 9);
+  color: rgb(77, 77, 77);
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button:active{
+  box-shadow: inset 0 0 5px black;
+  font-size: 14px;
+}
+
+.forget{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.forget a, p{
+  color: white;
+  text-decoration: none;
+}
+
+/* estilos para smartphones */
+@media (max-width: 767px) {
+  .container{
+    width: 70%;
+    filter: none;
+  }
+}
+
+
+/* estilos para tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+   .container{
+    width: 50%;
+    height: 40%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
