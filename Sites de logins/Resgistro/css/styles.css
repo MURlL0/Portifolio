@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,13 +23,11 @@ body {
 
 .container{
   color: rgb(255, 255, 255);
-  width: 300px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  text-align: center;
-  padding: 40px;  
+  background: transparent;
+  width: 350px;
+  height: 450px;  
+  text-align: center;  
+  padding: 10px 40px;
   opacity: 0;
   transition: 3.0s;
   
@@ -44,12 +43,10 @@ body {
 }
 .container2{
   color: rgb(255, 255, 255);
-  width: 300px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  text-align: center;
+  width: 350px;
+  height: 450px;  
+  text-align: center;  
+  padding: 10px 40px;text-align: center;
   padding: 60px 40px 0;  
   backdrop-filter: blur(20px);
   transition: 2.0s ease-in-out;
@@ -59,20 +56,15 @@ body {
   box-shadow: 0 0 10px 2px white;
 }
 
-
-
-.content{
-  width: 100%;
-  height: 100%;
-  position: relative;
-
-}
-
 .title{
   margin-bottom: 20px;
   margin-top: 20px; 
 }
 
+.title2{
+   margin-bottom: 20px;
+  margin-top: 0px; 
+}
 .input-box{
   margin-top: 10px;
   position: relative;
@@ -193,21 +185,54 @@ ion-icon{
 
 }
 /* estilos para smartphones */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .container{
-    width: 70%;
+    width: 85%;
     filter: none;
+    padding: 0 25px;
   }
+  .container2{
+    width: 85%;
+    filter: none;    
+  }
+  .title2{
+  margin-bottom: 40px;
+  margin-top: 10px; 
+}
+}
+
+@media screen and (min-width: 768px) {
+  
+  .container{
+    width: 350px;
+    height: 360PX;   
+    
+  }
+  .container2{
+  width: 400px;
+  height: 360px;   
+  padding: 50px 40px;  
+  }
+  .title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+}
+  .title2{
+  margin-bottom: 20px;
+  margin-top: 0px; 
+}
+
+.input-box{
+  margin-top: 0;
+}
+.content .input-box input {
+  font-size: 12px; 
+}
+
 }
 
 
-/* estilos para tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-   .container{
-    width: 50%;
-    height: 40%;
-  }
-}
 
 
 
