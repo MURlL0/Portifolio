@@ -11,6 +11,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+ 
 }
 
 #video-background {
@@ -19,6 +20,8 @@ body {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+  
+  
 }
 
 
