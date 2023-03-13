@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  
+  
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Desenvolvimento Web</h1>
+    <ion-icon class="icon" name="menu-outline"></ion-icon>
+    
+    <ul class="menu">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Sobre</a>
+      </li>
+      <li>
+        <a href="#">Serviços</a>
+      </li>
+      <li>
+        <a href="#">Contato</a>
+      </li>
+    </ul>
+    <p class="get">
+      <a href="#">Iniciar</a>
+    </p>
+  </nav>
+  <div class="dropdown">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Sobre</a>
+    </li>
+    <li>
+      <a href="#">Serviços</a>
+    </li>
+    <li>
+      <a href="#">Contato</a>
+    </li>
+    <li>
+      <p class="get">
+        <a href="#">Iniciar</a>
+      </p>
+    </li>
+  </div>
+
+  <div class="container">
+    <div class="login-box">
+      <h1 class="title">Registrar</h1>
+
+      
+      <form action="submitted.html" name="suForm" id="supform">
+
+        <div class="input-box">          
+          <input name="name" id="name" type="text" required>
+          <label for="user">Nome Completo</label>
+        </div>
+
+        <div class="input-box">    
+          <input name="email" id="email" type="email" required>
+          <label for="">E-mail</label>
+        </div>
+
+        <div class="input-box">          
+          <input name="pass" id="pass" type="password" required>
+          <label for="">Senha</label>
+        </div>
+
+        <input type="submit" id="submit-btn" value="Login" onmouseover="mouseOver()">
+        
+        <div class="remember">
+
+          <input type="checkbox"> Relembrar a senha
+        </div>
+        
+
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <script>
+
+    var a = 0;
+
+    function mouseOver() {
+
+      const name = document.forms['suForm']['name'].value;
+      const email = document.forms['suForm']['email'].value;
+      const pass = document.forms['suForm']['pass'].value;
+      const tick = document.querySelector('#check');
+
+      const emailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
+
+      if ((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a == 0) {
+        buttonMoveLeft();
+        a = 1;
+        return false;
+      }
+
+      if ((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a == 1) {
+        buttonMoveRight();
+        a = 2;
+        return false;
+      }
+
+      if ((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a == 2) {
+        buttonMoveLeft();
+        a = 1;
+        return false;
+      }
+
+      else {
+
+        // document.getElementById('submit-btn').click();  
+        document.getElementById('submit-btn').style.cursor = 'pointer';
+        return false;
+      };
+
+    };
+
+
+
+
+    function buttonMoveLeft() {
+
+      const button = document.getElementById('submit-btn');
+      button.style.transform = 'translateX(-200%)';
+
+    };
+
+
+    function buttonMoveRight() {
+
+      const button = document.getElementById('submit-btn');
+      button.style.transform = 'translateX(200%)';
+
+    };
+
+
+    function resetBtn() {
+      const button = document.getElementById('submit-btn');
+      button.style.transform = 'translateX(0%)';
+    };
+
+
+  </script>
+</body>
+
+</html>
