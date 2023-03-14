@@ -1,101 +1,249 @@
+:root{
+  --cor-input: #333333;
+  --cor-check-box: #b3b3b3;
+  --cor-footer: #737373;
+  --cor-article-input: #8c8c8c;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 body{
-  background-image: url(../Image/BR-pt-20230130-popsignuptwoweeks-perspective_alpha_website_large.jpg) ;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../Image/BR-pt-20230130-popsignuptwoweeks-perspective_alpha_website_large.jpg);
   background-size: cover;
-  margin-right: auto;
-  margin-left: auto;
+  
   
 }
 
-.foto-logo{
-  justify-content: left;
-  background-image: url(../Image/580b57fcd9996e24bc43c529.png);
-  height: 130px;
-  width: 210px;
-  margin-right: 23px;
-  margin-top: -24px;
-  margin-bottom: -21px; 
+.mobile{
+  display: none;
 }
 
-.box{
-  padding: 60px 68px 40px;
-  width: 500px;
-  margin: 0 auto;
-  margin-bottom: 90px;
-  background-color: rgba(0, 0, 0, 0.856);
+.header{
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+}
 
-  
+.header img{
+  width: 167px;
+  height: 90px;
 }
 
 .container{
-  padding: 60px 60px 68px 40px;
-  display: block;
-  margin: 0px 0px 90px;
+  width: 450px;
+  height: 660px;
+  background-color: #000000bf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 68px 40px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+
+.container .title{
+  margin-top: -130px;
+  color: white;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+
+}
+
+.input-box{
+  margin-top: 10px; 
+  position: relative;
+   
+}
+
+.input-box input{
+  background-color: var(--cor-input);
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 20px 0;
+
   
+  
+}
+.input-box label{
+  position: absolute;
+  color: var(--cor-article-input);
+  left: 16px;
+  top: 50%;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 50ms;
+}
+
+.input-box input:focus{
+  border-bottom: 2px solid orange;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+  top: 10px;
+  left: 18px;
+  font-size: 11px;
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  color: white;
+  background: #e50914;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.custom-checkbox{
+  margin: 10px 0;
+  color: var(--cor-check-box);
+  font-size: 13px;
+  position: relative;
+}
+
+.custom-checkbox  p{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.custom-checkbox a{
+  text-decoration: none;
+  color: var(--cor-check-box);
+}
+
+.article{
+  margin-top: 100px;
+  color: var(--cor-article-input);
+  font-size:  13px;
+}
+
+.article a{
+  text-decoration: none;
+  color: #0071eb;
+}
+
+.assinar{
+  color: var(--cor-footer);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.assinar a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+.content{
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000bf;
+  margin-top: 90px;
   
    
-  border-radius: 4px;
-  margin-top: 2px;
-  padding-top: 90px;
-  padding-bottom: 400px;
-  justify-content: center;
+}
+
+.footer{
+  padding: 30px 30px 20px;
+  color: var(--cor-footer);
+  font-size: 13px;
+  padding: 30px;
+  max-width: 100%;
+  
+}
+
+
+.footer p{
+  font-size: 16px;
+  margin-bottom: 20px
+}
+
+.footer a{
+  text-decoration: none;
+  color: var(--cor-footer);
+
+}
+
+.footer ul{
   display: flex;
-  align-items: center;  
+  justify-content: flex-start;
+  align-items: center;
+  
 }
 
-.login{
-  padding: 0px 150px;
-  justify-content: left;
+.ul2 li{
+ padding: 0 200px 0 0;
 }
 
-.entra{
-  color: white;
-  font-size: 32px;
-
+ul li{
+  padding: 0 214px 0 0;
+  list-style: none;
+  margin: 0 0 16px 0;
 }
 
-.usuario {
-  background-color: rgb(56, 56, 56);
-  border-radius: 4px;
-  width: 325px;
-  height: 50px;
-  color: darkgray;
-  border-style: none;
-  margin-top: 50px;
-  font-size: 17px;
-}
+@media screen and (max-width: 768px){
 
-.senha{ 
-  background-color: rgb(56,56,56);
-  border-radius: 4px;
-  width: 325px;
-  height: 50px;
-  color: darkgray;
-  border-style: none;
-  font-size: 17px;
-  margin-top: -7px;
-}
+  .header{
+    width: 100%;
+    background-color: black;
 
-.btn-danger{
-  width: 325px;
-  height: 50px;
-  border-radius: 4px;
-  border-style: none;
-  margin-top: 15px;
-  font-size: 17px;
+  }  
 
-}
+  .header img{
+    width: 80px;
+    height: 60px;
+    
+  }
+  .container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    margin-top: -100px;
+    padding: 0 20px;  
+  }
 
-.rodape{
-  padding-top: 240px;
-  background-color: rgba(0, 0, 0, 0.856);
-  margin-bottom: -20px;
-  margin-top: 90px;
-  color:darkgray;
-}
+  .box{
+    margin-top: -200px;
+  }
 
-.artigo-rodape{
-  margin-top: -200px;
-  margin-left: 260px;
-  position: absolute;
+  .article{
+    margin-top: 40px;
+  }
+  
+  .footer{
+    margin-top: -200px;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+
+  }
+  
 }
+  
+
+
+
+
+
+
+
+

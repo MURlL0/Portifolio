@@ -1,14 +1,15 @@
 function validar() {
-    var user = "netmonstro@gmail.com";
+    var email = "netmonstro@gmail.com";
     var pass = "13101989";
+
     if (
-        user === document.forms["login"]["usuario"].value &&
-        pass === document.forms["login"]["senha"].value
+        email === document.forms["login"]["email"].value &&
+        pass === document.forms["login"]["password"].value
     ) {
-        alert("Login Valido");
+        alert("Login valido");
         return true;
     } else {
-        alert("Login invalido");
+        alert("Login Invalido");
         return false;
     }
 }
