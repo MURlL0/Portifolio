@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    touch-action: pan-y;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(https://a-static.besthdwallpaper.com/purple-split-wallpaper-2560x1080-59090_14.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-position: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-position: center;
+        padding: 0 20px;
+    }
+}

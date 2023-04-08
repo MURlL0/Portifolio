@@ -1,0 +1,77 @@
+.container-login {
+    width: 400px;
+    padding: 30px 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+
+    .title-login {
+        margin: 10px 0 30px;
+        text-align: center;
+        color: white;
+    }
+
+    #result {
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .input-box {
+        width: 100%;
+        margin-top: 10px;
+        position: relative;
+
+        input {
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+
+            &::placeholder {
+                position: absolute;
+                color: white;
+                margin-top: 10px;
+            }
+
+            &:focus {
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+    button {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        background-color: transparent;
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 20px;
+        display: block;
+
+        &:hover {
+            transition: all 700ms ease-in-out;
+            background-color: white;
+            color: black;
+            box-shadow: 0 0 25px white, 0 0 50px white, 0 0 80px white;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .container-login {
+        width: 350px;
+
+        .title-login {
+            margin: 0px 0 10px;
+        }
+    }
+}
