@@ -1,0 +1,126 @@
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    display: flex;
+    position: relative;
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            padding: 0 30px;
+            list-style: none;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        .get {
+            background-color: $color-primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.2ms ease;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            &:active {
+                transform: scale(1.04);
+                color: white !important;
+            }
+        }
+    }
+}
+.dropdown {
+    opacity: 0;
+}
+
+@media (max-width: 2000px) {
+    .navbar {
+        .menu {
+            margin-left: 700px;
+        }
+    }
+    .dropdown {
+        display: none;
+    }
+}
+
+@media (max-width: 1550px) {
+    .navbar {
+        .menu {
+            margin-left: 400px;
+        }
+    }
+    .dropdown {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        .logo {
+            text-align: center;
+            margin-right: -200px;
+            display: block;
+        }
+
+        .menu .get {
+            display: none;
+        }
+    }
+
+    .dropdown {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.07);
+        right: 10px;
+        top: 30px;
+        width: 100px;
+        border-radius: 10px;
+        backdrop-filter: blur(15px);
+        opacity: 1;
+        transition: opacity 800ms ease-out;
+        z-index: 1;
+        display: block;
+
+        li {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        .get {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        &:hover {
+            color: white;
+        }
+    }
+}
