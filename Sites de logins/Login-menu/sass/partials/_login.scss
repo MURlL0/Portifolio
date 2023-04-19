@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: calc(100vh - 94.400px) ;
+    height: calc(100vh - 94.4px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,16 +53,16 @@
             }
         }
         button {
-                width: 100px;
-                height: 35px;
-                margin-top: 30px;
-                border-radius: 15px;
-                border: none;
-                outline: none;
-                color: white;
-                background-color: $color-primary;
-                font-weight: 600;
-            }
+            width: 100px;
+            height: 35px;
+            margin-top: 30px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: $color-primary;
+            font-weight: 600;
+        }
 
         .remember {
             margin-top: 20px;
@@ -83,7 +83,6 @@
         height: 100vh;
         .login-box {
             margin-top: -100px;
-            
         }
     }
 }
