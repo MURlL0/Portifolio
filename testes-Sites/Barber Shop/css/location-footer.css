@@ -1,0 +1,136 @@
+.location{
+  background-image: url(../img/bg-location.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 100px 140px 0;
+  height: 100vh;
+  
+}
+
+.location .container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.location .container .header-container{
+  background-color: #181818;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px;
+}
+
+.location .container .header-container .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location .container .header-container .content .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;  
+}
+
+.location .container .header-container .content .description{
+  padding-left: 20px;
+  line-height: 18px;
+}
+
+.location .container .header-container .content .description p{
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.location .container .header-container .content .description span{
+  font-size: 14px;
+}
+
+.map-container{
+  width: 100%;
+  height: 70%;
+}
+
+.location .container .map-container iframe{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*******
+*FOOTER
+*******/
+
+
+
+.footer{
+  background-color: #181818;
+  height: 100px;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}
+
+/*Responsividade*/
+
+@media (max-width: 768px){
+
+  .location{
+    padding: 20px 10px;
+  }
+
+  .location .container .header-container{
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: start; 
+    margin-bottom: 10px;
+  }
+
+  .location .container .map-container{
+    margin-bottom: 20px;
+    height: 65%;
+  }
+
+  .location .container .header-container .content{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0; 
+  }
+
+  .footer{
+    height: 60px;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: -1px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1170px) {
+
+  .location{
+    padding: 20px 10px;
+  }
+
+  .location .container .header-container .content .description p{
+    font-size: 10px;
+  }
+
+  .location .container .header-container .content .description span{
+    font-size: 10px;
+  }
+  
+  .location .container .header-container .content .icon img{
+    width: 15px;
+    height: 15px;
+  }
+}
