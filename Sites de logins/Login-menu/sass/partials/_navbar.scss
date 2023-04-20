@@ -96,11 +96,18 @@
         cursor: pointer;
         right: 10%;
         top: 55px;
+        transition: transform 4000ms ;
 
-        &:active {
-            transform: rotate(90deg);
+        &:active{
+          transform: rotate(180deg);   
+          transition: transform 10ms;
+          
         }
+
+        
     }
+
+    
 
     .dropdown {
         display: block;
