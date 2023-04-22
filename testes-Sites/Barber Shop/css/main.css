@@ -102,9 +102,10 @@ body {
   }
   .home .logo {
     display: block;
-    position: absolute;
-    width: 100px;
-    height: 100px;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
   }
 }
 .about {
