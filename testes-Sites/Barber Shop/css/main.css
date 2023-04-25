@@ -411,5 +411,30 @@ body {
   }
 }
 .gallery {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .title {
+  text-align: center;
+  color: #917758;
+  padding: 30px;
+}
+.gallery .title h1 {
+  font-size: 4rem;
+}
+.gallery .container-fotos {
+  min-width: 800px;
+  display: grid;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-template-rows: repeat(3, 300px);
+  gap: 15px;
+}
+.gallery .container-fotos img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
