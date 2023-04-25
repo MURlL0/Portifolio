@@ -29,10 +29,10 @@
           <img src="img/logo.png" alt="logo">
         </li>
         <li>
-          <a href="#">Galeria</a>
+          <a href="#agendamento">Agendamento</a>
         </li>
         <li>
-          <a href="#">Agendamento</a>
+          <a href="#">Galeria</a>
         </li>
         <li>
           <a href="#">Localização</a>
@@ -55,7 +55,7 @@
 
     <a href="#home"><ion-icon name="chevron-up-circle-outline"></ion-icon></a>
 
-   
+
 
 
   </section>
@@ -99,7 +99,7 @@
 
     <div class="box2">
       <div class="container">
-        <div>
+        <div class="history">
           <span>Uma historia única</span>
           <h1>52 anos de experiência</h1>
 
@@ -171,6 +171,59 @@
 
   </section>
 
+  <section class="agendamento" id="agendamento">
+
+    <img src="img/chair-ic.png" alt="cadeira">
+
+    <div class="title">
+      <h1>Faça um Agendamento</h1>
+      <img src="img/heading-ic-white.png" alt="">
+    </div>
+
+    <div class="container-login">
+      <form name="login" onsubmit="return validar()">
+
+        <div class="input-box">
+          <label for="name">Nome</label>
+          <input name="name" type="text" placeholder="Digite seu nome">
+        </div>
+
+        <div class="input-box">
+          <label for="email">E-mail</label>
+          <input name="email" type="email" placeholder="Digite seu email">
+        </div>
+
+        <div class="input-box">
+          <label for="name">Telefone</label>
+          <input name="telefone" type="tel" placeholder="Digite seu Telefone">
+        </div>
+
+        <div class="input-box">
+          <label for="name">Tipo de serviço</label>
+          <select name="serviços" id="servicos">
+            <option selected value="">-- Selecione --</option>
+          </select>
+        </div>
+      </form>
+
+
+      <div class="mensagem">
+        <label for="name">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="100%" rows="5"></textarea>
+      </div>
+
+      <button>Enviar</button>
+    </div>
+
+
+  </section>
+
+  <section class="gallery" id="gallery">
+
+  </section>
+
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

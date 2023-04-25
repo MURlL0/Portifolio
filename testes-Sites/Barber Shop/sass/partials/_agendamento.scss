@@ -1,0 +1,110 @@
+.agendamento {
+    height: 100vh;
+    background-color: $color-primary;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 30px;
+    z-index: 2;
+    position: relative;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 200px;
+    }
+
+    .title {
+        text-align: center;
+        z-index: 2;
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            color: white;
+            font-weight: 100;
+        }
+    }
+
+    .container-login {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 800px;
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+            margin: 0 auto;
+            gap: 10px;
+
+            .input-box {
+                width: 100%;
+                position: relative;
+
+                label {
+                    position: absolute;
+                    font-size: 1.6rem;
+                    color: white;
+                    margin-top: 10px;
+                    top: -10%;
+                }
+
+                input {
+                    width: 100%;
+                    height: 40px;
+                    margin: 20px 0;
+                    padding-left: 10px;
+                    outline: none;
+                    border: none;
+                }
+
+                select {
+                    width: 100%;
+                    height: 40px;
+                    margin: 20px 20px 10px 0;
+                    text-align: center;
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+
+        .mensagem {
+            width: 100%;
+            margin: 10px 20px 10px 0;
+            z-index: 2;
+
+            label {
+                color: white;
+                font-size: 1.6rem;
+            }
+
+            textarea {
+                width: 100%;
+                margin-top: 10px;
+                resize: none;
+                border: none;
+                outline: none;
+                padding: 5px;
+                z-index: 2;
+            }
+        }
+    }
+    button {
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        padding: 10px 30px;
+        cursor: pointer;
+        color: white;
+        background-color: $color-button;
+
+        &:active {
+            transform: scale(1.03);
+        }
+    }
+}

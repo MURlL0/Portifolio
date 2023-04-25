@@ -1,16 +1,16 @@
 .about {
-    
     background-color: $color-primary;
     display: grid;
     grid-template-columns: minmax(300px, 600px) minmax(600px, 1fr);
     margin: 0 auto;
     align-items: center;
+    gap: 30px;
+    padding: 20px 0 40px;
 
     .box1 {
         width: 100%;
-        height: 100vh;
         max-width: 45rem;
-        margin: 0 auto;
+        margin: 20px auto;
         background-image: url(../img/brush-big.jpg);
         background-position: center;
         background-size: cover;
@@ -89,7 +89,7 @@
 
         .container {
             display: grid;
-            grid-template-columns: minmax(200px, 1fr) minmax(200px, 400px);
+            grid-template-columns: minmax(300px, 1fr) minmax(100px, 400px);
 
             span {
                 font-size: 2rem;
@@ -118,23 +118,13 @@
             }
         }
         .img {
+            width: 100%;
+
             img {
                 display: block;
                 margin: 5rem auto;
-                width: 300px;
+                max-width: 300px;
             }
         }
-    }
-}
-
-@media (max-width: 1555px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 45%;
     }
 }
