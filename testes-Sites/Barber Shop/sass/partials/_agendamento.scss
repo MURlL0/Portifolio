@@ -13,9 +13,10 @@
 
     img {
         position: absolute;
+        z-index: -1;
         bottom: 0;
         right: 0;
-        max-width: 200px;
+        max-width: 250px;
     }
 
     .title {
@@ -33,7 +34,8 @@
     .container-login {
         margin: 0 auto;
         width: 100%;
-        max-width: 800px;
+        max-width: 1000px;
+        
 
         form {
             display: grid;
@@ -49,8 +51,7 @@
                     position: absolute;
                     font-size: 1.6rem;
                     color: white;
-                    margin-top: 10px;
-                    top: -10%;
+                    top: -5%;
                 }
 
                 input {
@@ -60,6 +61,12 @@
                     padding-left: 10px;
                     outline: none;
                     border: none;
+                    font-size: 1.4rem;
+
+
+                    &::placeholder {
+                        font-size: 1.4rem;
+                    }
                 }
 
                 select {
@@ -69,13 +76,15 @@
                     text-align: center;
                     outline: none;
                     border: none;
+                    font-size: 1.4rem;
+                    color: #7e7e85;
                 }
             }
         }
 
         .mensagem {
             width: 100%;
-            margin: 10px 20px 10px 0;
+            margin: 5px 20px 10px 0;
             z-index: 2;
 
             label {
@@ -95,13 +104,14 @@
         }
     }
     button {
-        margin-top: 20px;
+        margin-top: 10px;
         border: none;
         outline: none;
         padding: 10px 30px;
         cursor: pointer;
         color: white;
         background-color: $color-button;
+        font-size: 1.6rem;
 
         &:active {
             transform: scale(1.03);

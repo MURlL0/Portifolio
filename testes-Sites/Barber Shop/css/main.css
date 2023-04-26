@@ -28,6 +28,7 @@ body {
   margin: 0px auto;
   display: grid;
   padding-top: 40px;
+  justify-content: center;
 }
 .home .navbar .menu {
   display: grid;
@@ -91,12 +92,13 @@ body {
   color: rgba(0, 0, 0, 0.878);
   width: 50px;
   height: 50px;
+  z-index: 100;
 }
 .home ion-icon:active {
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .home .navbar {
     display: none;
   }
@@ -132,20 +134,21 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.775);
   margin: 0 auto;
+  padding: 3rem 0;
 }
 .about .box1 .overplay .title {
   margin: 0 0 1rem;
 }
 .about .box1 .overplay .title img {
+  margin: 0 auto;
   width: 6rem;
   height: 6rem;
 }
 .about .box1 .overplay .title h2 {
   color: #917758;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .about .box1 .overplay .text + div {
   margin-top: 3rem;
@@ -167,13 +170,13 @@ body {
   color: #917758;
 }
 .about .box1 .overplay .text h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: grey;
   font-weight: 100;
 }
 .about .box1 .overplay .text span {
   display: block;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: white;
 }
 .about .box1 .overplay img {
@@ -183,6 +186,7 @@ body {
 .about .box1 .overplay span {
   font-size: 1.6rem;
   color: white;
+  font-size: 2rem;
 }
 .about .box2 {
   display: grid;
@@ -292,9 +296,10 @@ body {
 }
 .agendamento img {
   position: absolute;
+  z-index: -1;
   bottom: 0;
   right: 0;
-  max-width: 200px;
+  max-width: 250px;
 }
 .agendamento .title {
   text-align: center;
@@ -309,7 +314,7 @@ body {
 .agendamento .container-login {
   margin: 0 auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
 }
 .agendamento .container-login form {
   display: grid;
@@ -325,8 +330,7 @@ body {
   position: absolute;
   font-size: 1.6rem;
   color: white;
-  margin-top: 10px;
-  top: -10%;
+  top: -5%;
 }
 .agendamento .container-login form .input-box input {
   width: 100%;
@@ -335,6 +339,13 @@ body {
   padding-left: 10px;
   outline: none;
   border: none;
+  font-size: 1.4rem;
+}
+.agendamento .container-login form .input-box input::-moz-placeholder {
+  font-size: 1.4rem;
+}
+.agendamento .container-login form .input-box input::placeholder {
+  font-size: 1.4rem;
 }
 .agendamento .container-login form .input-box select {
   width: 100%;
@@ -343,10 +354,12 @@ body {
   text-align: center;
   outline: none;
   border: none;
+  font-size: 1.4rem;
+  color: #7e7e85;
 }
 .agendamento .container-login .mensagem {
   width: 100%;
-  margin: 10px 20px 10px 0;
+  margin: 5px 20px 10px 0;
   z-index: 2;
 }
 .agendamento .container-login .mensagem label {
@@ -363,13 +376,14 @@ body {
   z-index: 2;
 }
 .agendamento button {
-  margin-top: 20px;
+  margin-top: 10px;
   border: none;
   outline: none;
   padding: 10px 30px;
   cursor: pointer;
   color: white;
   background-color: #3c2c12;
+  font-size: 1.6rem;
 }
 .agendamento button:active {
   transform: scale(1.03);
@@ -410,31 +424,123 @@ body {
     font-size: 50%;
   }
 }
+@media (max-width: 400px) {
+  html {
+    font-size: 45%;
+  }
+}
 .gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
 }
 .gallery .title {
   text-align: center;
   color: #917758;
-  padding: 30px;
+  padding: 60px 0 0;
 }
 .gallery .title h1 {
   font-size: 4rem;
 }
 .gallery .container-fotos {
-  min-width: 800px;
+  padding: 40px 20px 50px;
+  max-width: 100%;
   display: grid;
-  margin: 0 auto;
+  margin: 40px auto;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-  grid-template-rows: repeat(3, 300px);
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  grid-template-rows: repeat(auto-fit, 300px) 350px;
+  gap: 30px;
+  border: 1px solid #917758;
+  border-radius: 15px;
 }
 .gallery .container-fotos img {
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 1700px) {
+  .gallery .container-fotos {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 400px);
+  }
+}
+@media (max-width: 1555px) {
+  .gallery .container-fotos {
+    grid-template-rows: repeat(auto-fit, 300px) 300px;
+  }
+}
+.location {
+  background-image: url(../img/bg-location.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.location .container {
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.location .container .header-container {
+  background-color: #181818;
+  padding: 20px 0;
+}
+.location .container .header-container .menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
+}
+.location .container .header-container .menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.location .container .header-container .menu li p {
+  font-size: 1.4rem;
+  color: white;
+  display: block;
+  font-weight: 100;
+}
+.location .container .header-container .menu li span {
+  color: white;
+  display: block;
+  font-size: 1.6rem;
+}
+.location .container .header-container .menu li img {
+  width: 4rem;
+  height: 4.3rem;
+  margin: 0.6rem;
+  border: 1px solid #917758;
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+.location .container .header-container .menu li img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .location .container .header-container .menu {
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+  }
+}
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #181818;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.411);
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+.footer p {
+  padding: 35px;
+  margin: 0 auto;
+  font-weight: 100;
 }/*# sourceMappingURL=main.css.map */

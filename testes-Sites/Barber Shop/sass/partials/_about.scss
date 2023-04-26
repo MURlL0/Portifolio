@@ -22,21 +22,22 @@
             align-items: center;
             text-align: center;
             width: 100%;
-            height: 100%;
             background-color: rgba(0, 0, 0, 0.775);
             margin: 0 auto;
+            padding: 3rem 0;
 
             .title {
                 margin: 0 0 1rem;
 
                 img {
+                    margin: 0 auto;
                     width: 6rem;
                     height: 6rem;
                 }
 
                 h2 {
                     color: $color-primary;
-                    font-size: 3rem;
+                    font-size: 3.5rem;
                 }
             }
             .text + div {
@@ -60,14 +61,14 @@
                 }
 
                 h3 {
-                    font-size: 1.6rem;
+                    font-size: 2rem;
                     color: grey;
                     font-weight: 100;
                 }
 
                 span {
                     display: block;
-                    font-size: 1.6rem;
+                    font-size: 2rem;
                     color: white;
                 }
             }
@@ -78,6 +79,7 @@
             span {
                 font-size: 1.6rem;
                 color: white;
+                font-size: 2rem;
             }
         }
     }
