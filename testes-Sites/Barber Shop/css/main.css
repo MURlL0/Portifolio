@@ -98,7 +98,16 @@ body {
   transform: scale(1.1);
 }
 
+@media (max-width: 1555px) {
+  .home {
+    background-position: center;
+    background-attachment: scroll;
+  }
+}
 @media (max-width: 950px) {
+  .home {
+    background-position: center center;
+  }
   .home .navbar {
     display: none;
   }
