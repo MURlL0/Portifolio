@@ -85,17 +85,25 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
 }
-.home ion-icon {
+.home .back {
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   position: fixed;
   top: 90%;
   right: 20px;
-  color: rgba(0, 0, 0, 0.878);
+  color: white;
   width: 50px;
   height: 50px;
   z-index: 100;
+  border-radius: 50%;
 }
-.home ion-icon:active {
+.home .back:active {
   transform: scale(1.1);
+}
+.home .dropdown,
+.home .hamburger {
+  display: none;
 }
 
 @media (max-width: 1555px) {
@@ -111,6 +119,10 @@ body {
   .home .navbar {
     display: none;
   }
+  .home .dropdown,
+  .home .hamburger {
+    display: block;
+  }
   .home .logo {
     display: block;
     margin: 0 auto;
@@ -120,6 +132,7 @@ body {
   }
 }
 .about {
+  height: auto;
   background-color: #917758;
   display: grid;
   grid-template-columns: minmax(300px, 600px) minmax(600px, 1fr);
@@ -169,10 +182,10 @@ body {
 }
 .about .box1 .overplay .text::after {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   content: "•";
   color: white;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .about .box1 .overplay .text:last-of-type::after {
   content: "|";
@@ -237,16 +250,24 @@ body {
   max-width: 300px;
 }
 
+@media (max-width: 768px) {
+  .about {
+    height: auto;
+  }
+}
 .services {
-  height: auto;
   margin: 0 auto;
-  padding: 0 0 60px;
+  padding: 100px;
   background-color: #f5eee6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 .services .title {
   display: grid;
-  margin: 0 auto;
-  padding: 50px;
+  margin: 0px auto;
   align-items: center;
   justify-items: center;
 }
@@ -255,11 +276,13 @@ body {
   color: #917758;
   margin: 10px;
   font-weight: 100;
+  text-align: center;
 }
 .services .container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-  margin: 0 auto;
+  margin: 0px auto;
   align-items: center;
   justify-content: center;
   gap: 50px;
@@ -290,18 +313,22 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .services .title {
+    padding: 50px 0;
+  }
+}
 .agendamento {
   height: 100vh;
   background-color: #917758;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  align-content: center;
   justify-content: center;
-  gap: 100px;
-  padding: 30px;
   z-index: 2;
+  gap: 50px;
   position: relative;
+  padding: 10px;
 }
 .agendamento .cadeira {
   position: absolute;
@@ -309,6 +336,7 @@ body {
   bottom: 0;
   right: 0;
   max-width: 250px;
+  display: block;
 }
 .agendamento .title {
   text-align: center;
@@ -321,7 +349,6 @@ body {
   font-weight: 100;
 }
 .agendamento .container-login {
-  margin: 0 auto;
   width: 100%;
   max-width: 1000px;
 }
@@ -443,25 +470,25 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding-bottom: 50px;
 }
 .gallery .title {
   text-align: center;
   color: #917758;
-  padding: 60px 0 0;
+  padding: 50px;
 }
 .gallery .title h1 {
   font-size: 4rem;
 }
 .gallery .container-fotos {
-  padding: 40px 20px 50px;
   max-width: 100%;
+  padding: 20px;
   display: grid;
-  margin: 40px auto;
+  margin: 0 10px;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
-  grid-template-rows: repeat(auto-fit, 300px) 350px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+  grid-template-rows: repeat(auto-fit, 300px) 300px;
   gap: 30px;
   border: 1px solid #917758;
   border-radius: 15px;
@@ -469,27 +496,26 @@ body {
 .gallery .container-fotos img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
-@media (min-width: 1700px) {
-  .gallery .container-fotos {
-    max-width: 100%;
-    grid-template-columns: repeat(3, 400px);
-  }
-}
-@media (max-width: 1555px) {
-  .gallery .container-fotos {
-    grid-template-rows: repeat(auto-fit, 300px) 300px;
-  }
-}
 .location {
   background-image: url(../img/bg-location.jpg);
   background-size: cover;
   background-position: center;
+  padding: 20px;
+  height: 100vh;
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
 }
 .location .container {
-  margin: 0 auto;
-  padding: 40px 20px;
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+}
+.location .container iframe {
+  height: 100%;
 }
 .location .container .header-container {
   background-color: #181818;
@@ -552,4 +578,92 @@ body {
   padding: 35px;
   margin: 0 auto;
   font-weight: 100;
+}
+
+.home .dropdown {
+  position: fixed;
+  left: -100%;
+  top: 20px;
+  font-size: 1.6rem;
+  border: 1px solid #917758;
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 300ms ease-in-out;
+}
+.home .dropdown a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+.home .dropdown li {
+  list-style: none;
+}
+.home .dropdown li + li {
+  margin-top: 20px;
+}
+.home .dropdown.open {
+  left: 10px;
+}
+.home #checkbox {
+  display: none;
+}
+.home .toggle {
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 50px;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: 0.5s;
+  padding: 5px;
+}
+.home .bars {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+}
+.home #bar2 {
+  transition-duration: 0.8s;
+}
+.home #bar1,
+.home #bar3 {
+  width: 70%;
+}
+.home #checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+.home #checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+}
+.home #checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+.home #checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+.home #checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
 }/*# sourceMappingURL=main.css.map */
