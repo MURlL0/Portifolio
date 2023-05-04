@@ -7,7 +7,7 @@
 
 
 ### Layout Web
-![Layout](https://github.com/MURlL0/Portifolio/blob/main/Sites/Barber%20Shop/assets/image.png?raw=true "Web")
+![Layout](https://github.com/MURlL0/Portifolio/blob/main/Sites/Barber%20Shop/assets/1-Doc1.png?raw=true "Web")
 <br>
 <br>
 
