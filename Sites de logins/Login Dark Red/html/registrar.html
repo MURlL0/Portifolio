@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Registrar</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Registrar</h1>
+    <p id="result"></p>
+    <form name="login" onsubmit="event.preventDefault(); registrar()">
+
+      <div class="input-box">
+        <label>
+          <input name="usuario" type="text" placeholder="Usuario">
+          <ion-icon class="icon" name="person"></ion-icon>
+        </label>
+      </div>
+
+      <div class="input-box">
+        <label>
+          <input name="email" type="email" placeholder="E-mail">
+          <ion-icon class="icon" name="mail"></ion-icon>
+        </label>
+      </div>
+      <div class="input-box">
+        <label>
+          <input name="password" type="password" placeholder="Senha">
+          <ion-icon class="icon" name="lock-closed"></ion-icon>
+        </label>
+      </div>
+      <div class="input-box">
+        <label>
+          <input name="cpassword" type="password" placeholder="Confirmar a Senha">
+          <ion-icon class="icon" name="lock-closed"></ion-icon>
+        </label>
+      </div>
+
+      <div class="form-check-input">
+        <div>
+          <input type="checkbox">
+          <p> Remember Me</p>
+        </div>
+        <span><a href="#">Forget Password</a></span>
+      </div>
+
+      <button id="registro">Registrar</button>
+
+      <article class="create">
+        Acesso a Conta <span><a href="../index.html">Login</a></span>
+      </article>
+    </form>
+
+    <div id="popup">
+      <h1>Registrado com sucesso</h1>
+      <a href="../index.html"><button id="clos">OK</button></a>
+    </div>
+  </div>
+
+    <div id="toast">
+      <h3>Cadastrado</h3>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/script_registro.js"></script>
+</body>
+
+</html>

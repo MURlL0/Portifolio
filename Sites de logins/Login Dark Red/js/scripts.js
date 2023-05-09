@@ -1,15 +1,18 @@
 function validar() {
-    const email = "netmonstro@gmail.com";
-    const password = "13101989";
+    const email = 'netmonstro@gmail.com';
+    const password = '13101989';
 
     if (
-        email === document.forms["login"]["email"].value &&
-        password === document.forms["login"]["password"].value
+        email === document.forms['login']['email'].value &&
+        password === document.forms['login']['password'].value
     ) {
-        alert("Login Valido");
+        alert('Login Valido');
         return true;
     } else {
-        alert("Login Invalido");
+        alert('Login Invalido');
         return false;
     }
 }
+
+
+
