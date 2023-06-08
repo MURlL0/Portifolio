@@ -7,14 +7,14 @@
 <br>
 
 
-<p align="center">LINK:
+<h3 align="center">LINK:
 https://murll0.github.io/God_of_War
-</p>
+</h3>
 
 <br>
-<br>
 
-<h2 align="center">Visão Geral/Responsividade</h2>
+
+<p align="center" style="font-size: 24px;">Visão Geral/Responsividade</p>
 
 <br>
 
