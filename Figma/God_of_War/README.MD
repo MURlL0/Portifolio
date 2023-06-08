@@ -9,6 +9,9 @@ https://murll0.github.io/God_of_War
 
 ![Layout](https://github.com/MURlL0/Portifolio/blob/main/Figma/God_of_War/assets/img-md/giphy.gif "Layout implementado no mobile")
 
+<img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/God_of_War/assets/img-md/giphy.gif" alt="Tema do Site" width="500">
+
+
 
 
 
