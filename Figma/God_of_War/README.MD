@@ -14,7 +14,7 @@ https://murll0.github.io/God_of_War
 <br>
 
 
-<p align="center" style="font-size: 30px;">Visão Geral/Responsividade</p>
+<span align="center" style="font-size: 30px;">Visão Geral/Responsividade</span>
 
 <br>
 
