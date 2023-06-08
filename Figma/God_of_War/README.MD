@@ -6,7 +6,7 @@
 
 <br>
 
-<h2 align="center">LINK A BAIXO
+<h2 align="center">LINK:
 https://murll0.github.io/God_of_War
 </h2>
 
