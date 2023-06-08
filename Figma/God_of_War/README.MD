@@ -7,6 +7,7 @@
 <br>
 
 <h2 align="center">Screenshots</h2>
+<br>
 
 <div align="center">
  <img src="https://github.com/MURlL0/Portifolio/blob/0a7db947bcc398493dbb8989df6b7c022c4799a8/Figma/God_of_War/assets/img-md/image1.png" >
@@ -24,7 +25,7 @@
  <img src="https://github.com/MURlL0/Portifolio/blob/8fdf36fee31cf6ab0c19041afd96abf920ed9033/Figma/God_of_War/assets/img-md/image4.png" alt="img4">
 </div>
 
-
+<br>
 
 <h2 align="center">Visão Geral/Responsividade</h2>
 
