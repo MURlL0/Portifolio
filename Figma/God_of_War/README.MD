@@ -9,16 +9,16 @@
 <h2 align="center">Screenshots</h2>
 
 <div align="center">
- <img src="https://github.com/MURlL0/Portifolio/blob/8fdf36fee31cf6ab0c19041afd96abf920ed9033/Figma/God_of_War/assets/img-md/image1.png)" alt="img1">
+ <img src="https://github.com/MURlL0/Portifolio/blob/8fdf36fee31cf6ab0c19041afd96abf920ed9033/Figma/God_of_War/assets/img-md/image1.png" alt="img1">
 </div>
 <div align="center">
- <img src="https://github.com/MURlL0/Portifolio/blob/8fdf36fee31cf6ab0c19041afd96abf920ed9033/Figma/God_of_War/assets/img-md/image2.png)" alt="img2">
+ <img src="https://github.com/MURlL0/Portifolio/blob/8fdf36fee31cf6ab0c19041afd96abf920ed9033/Figma/God_of_War/assets/img-md/image2.png" alt="img2">
 </div>
 <div align="center">
- <img src="https://github.com/MURlL0/Portifolio/blob/8fdf36fee31cf6ab0c19041afd96abf920ed9033/Figma/God_of_War/assets/img-md/image3.png)" alt="img3">
+ <img src="https://github.com/MURlL0/Portifolio/blob/8fdf36fee31cf6ab0c19041afd96abf920ed9033/Figma/God_of_War/assets/img-md/image3.png" alt="img3">
 </div>
 <div align="center">
- <img src="https://github.com/MURlL0/Portifolio/blob/8fdf36fee31cf6ab0c19041afd96abf920ed9033/Figma/God_of_War/assets/img-md/image4.png)" alt="img4">
+ <img src="https://github.com/MURlL0/Portifolio/blob/8fdf36fee31cf6ab0c19041afd96abf920ed9033/Figma/God_of_War/assets/img-md/image4.png" alt="img4">
 </div>
 
 
