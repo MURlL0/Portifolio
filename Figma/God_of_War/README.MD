@@ -5,3 +5,11 @@ Este projeto consiste em um site que foi desenvolvido utilizando HTML e SCSS, co
 ## LINK A BAIXO
 https://murll0.github.io/God_of_War
 
+## visão geral mais responsividade
+
+![Layout](https://github.com/MURlL0/Portifolio/blob/main/Figma/God_of_War/assets/img-md/V%C3%ADdeo%20sem%20t%C3%ADtulo.gif "Layout implementado no mobile")
+
+
+
+
+
