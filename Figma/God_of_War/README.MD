@@ -10,7 +10,7 @@ https://murll0.github.io/God_of_War
 
 <div align="center">
 
-![Layout](<img src="https://github.com/MURlL0/Portifolio/blob/5cc5e3e03ae2b2e10eed717650ac41964f19229c/Figma/God_of_War/assets/img-md/giphy.gif" alt="Tema do Site" width="700"> "Layout implementado no mobile")
+<img src="https://github.com/MURlL0/Portifolio/blob/5cc5e3e03ae2b2e10eed717650ac41964f19229c/Figma/God_of_War/assets/img-md/giphy.gif" alt="Tema do Site" width="700"> 
 
 </div>
 
