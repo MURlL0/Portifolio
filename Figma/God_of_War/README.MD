@@ -13,7 +13,7 @@
 </div>
 
 <div align="center">
- <img src="https://github.com/MURlL0/Portifolio/blob/8fdf36fee31cf6ab0c19041afd96abf920ed9033/Figma/God_of_War/assets/img-md/image2.png" alt="img2">
+ <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/God_of_War/assets/img-md/image2.png?raw=true" alt="img2">
 </div>
 
 <div align="center">
