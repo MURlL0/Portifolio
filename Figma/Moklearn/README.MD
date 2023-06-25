@@ -9,7 +9,7 @@
 <br>
 
 <div align="center">
- <img src="https://github.com/MURlL0/Portifolio/blob/0a447d00e6897f85b8a74e1e4b076dfe17464eee/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%20Full%20Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(1).png" >
+ <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(0).png?raw=true" >
 </div>
 
 <br>
