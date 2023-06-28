@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #252b42;
+}
+
 button {
   border: none;
   outline: none;
@@ -78,7 +82,7 @@ p {
   letter-spacing: 0rem;
 }
 
-button {
+button, span {
   font-size: 1.4rem;
   font-family: Montserrat;
   font-weight: 700;
@@ -86,10 +90,159 @@ button {
   letter-spacing: 0rem;
 }
 
-span {
+a {
   font-size: 1.4rem;
   font-family: Montserrat;
   font-weight: 600;
   line-height: 2.4rem;
   letter-spacing: 0rem;
+}
+
+.header {
+  background: transparent;
+  width: 100%;
+  padding: 1.6rem 0;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navbar .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.1rem;
+}
+.header .navbar .nav .logo {
+  color: white;
+  padding: 1.3rem 4.2rem 1.3rem 0rem;
+}
+.header .navbar .nav .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
+}
+.header .navbar .nav a {
+  color: white;
+}
+.header .navbar .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+}
+.header .navbar .login span {
+  color: white;
+}
+.header .navbar .login button {
+  display: flex;
+  padding: 1.5rem 4rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--primary-color, #23a6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: white;
+}
+
+.home {
+  background-image: url(../assets/home/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.home .bg {
+  height: 95vh;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 19.7rem;
+}
+.home .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8rem 0;
+  color: white;
+  gap: 8rem;
+}
+.home .container .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 70rem;
+  text-align: center;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+.home .container .title .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.home .container .title .buttons button {
+  display: flex;
+  padding: 1.5rem 3.6rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 3.7rem;
+  background: var(--primary-color, #23a6f0);
+  color: white;
+}
+.home .container .title .buttons .btn-1 {
+  background-color: transparent;
+  border: 0.1rem solid white;
+}
+.home .container .container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.home .container .container-box .box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 3.5rem 4rem;
+  gap: 1rem;
+  background: white;
+}
+.home .container .container-box .box h3 {
+  color: #252b42;
+}
+.home .container .container-box .box p {
+  color: #737373;
+}
+.home .container .container-box .__3 {
+  background: #23a6f0;
+}
+.home .container .container-box .__3 h3,
+.home .container .container-box .__3 p {
+  color: white;
+}
+
+.about {
+  background-color: #252b42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9.6rem 0;
+}
+.about .container_2_box {
+  padding: 4rem 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.about .container_2_box h5 {
+  margin: 3rem 0 1rem;
 }/*# sourceMappingURL=main.css.map */

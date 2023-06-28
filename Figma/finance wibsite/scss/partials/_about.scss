@@ -1,0 +1,21 @@
+.about {
+    background-color: $background_primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9.6rem 0;
+
+    .container_2_box {
+        padding: 4rem 5rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+
+        h5 {
+            margin: 3rem 0 1rem;
+        }
+    }
+}
