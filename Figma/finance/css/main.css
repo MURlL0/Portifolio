@@ -11,10 +11,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background-color: #252b42;
-}
-
 button {
   border: none;
   outline: none;
@@ -155,7 +151,6 @@ a {
   background-position: center;
 }
 .home .bg {
-  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   padding: 0 19.7rem;
 }
@@ -245,4 +240,54 @@ a {
 }
 .about .container_2_box h5 {
   margin: 3rem 0 1rem;
+}
+
+.testimonials {
+  background: #8ec2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11.2rem 15.2rem;
+  flex-direction: column;
+  gap: 8rem;
+}
+.testimonials .title {
+  max-width: 60.7rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.testimonials .title p {
+  max-width: 47rem;
+}
+.testimonials .boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 45rem);
+  gap: 13.7rem;
+  margin: 4rem 0;
+}
+.testimonials .boxes .box {
+  padding: 3rem 4rem;
+  background: white;
+  position: relative;
+}
+.testimonials .boxes .box .perfil {
+  position: absolute;
+  left: -45px;
+}
+.testimonials .boxes .box h3 {
+  color: #252b42;
+}
+.testimonials .boxes .box p,
+.testimonials .boxes .box h6 {
+  color: #737373;
+}
+.testimonials .boxes .box .stars {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
 }/*# sourceMappingURL=main.css.map */
