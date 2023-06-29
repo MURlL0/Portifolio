@@ -152,7 +152,7 @@ a {
 }
 .home .bg {
   background: rgba(0, 0, 0, 0.5);
-  padding: 0 19.7rem;
+  padding: 0 3rem;
 }
 .home .container {
   display: flex;
@@ -247,7 +247,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 11.2rem 15.2rem;
+  padding: 11.2rem 3rem;
   flex-direction: column;
   gap: 8rem;
 }
@@ -290,4 +290,48 @@ a {
   display: flex;
   align-items: center;
   margin: 1.5rem 0;
+}
+
+.clients {
+  background-color: #252b42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients .works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 0;
+}
+.clients .subscribe {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(270deg, #d71489 0%, #004788 100%);
+  padding: 3rem 5rem;
+  align-items: center;
+}
+.clients .subscribe .title {
+  max-width: 25.8rem;
+  color: white;
+}
+.clients .subscribe .input {
+  position: relative;
+}
+.clients .subscribe .input input {
+  height: 5.8rem;
+  outline: none;
+  border: none;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+}
+.clients .subscribe .input button {
+  position: absolute;
+  right: 0;
+  height: 5.8rem;
+  padding: 1.5rem 2.3rem;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  border: 0.1rem solid #e6e6e6;
+  background: var(--primary-color, #23a6f0);
 }/*# sourceMappingURL=main.css.map */
