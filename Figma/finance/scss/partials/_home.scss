@@ -36,11 +36,26 @@
                     @include btn-home;
                     background: var(--primary-color, #23a6f0);
                     color: white;
+                    transition: all 400ms linear;
+
+                    &:hover {
+                        background-color: transparent;
+                        border: 0.1rem solid white;
+                        transition: all 400ms linear;
+                    }
                 }
 
                 .btn-1 {
                     background-color: transparent;
                     border: 0.1rem solid white;
+                    transition: all 400ms linear;
+
+                    &:hover {
+                        transition: all 400ms linear;
+                        background: var(--primary-color, #23a6f0);
+                        color: white;
+                        border: none;
+                    }
                 }
             }
         }

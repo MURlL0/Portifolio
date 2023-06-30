@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -187,10 +188,23 @@ a {
   border-radius: 3.7rem;
   background: var(--primary-color, #23a6f0);
   color: white;
+  transition: all 400ms linear;
+}
+.home .container .title .buttons button:hover {
+  background-color: transparent;
+  border: 0.1rem solid white;
+  transition: all 400ms linear;
 }
 .home .container .title .buttons .btn-1 {
   background-color: transparent;
   border: 0.1rem solid white;
+  transition: all 400ms linear;
+}
+.home .container .title .buttons .btn-1:hover {
+  transition: all 400ms linear;
+  background: var(--primary-color, #23a6f0);
+  color: white;
+  border: none;
 }
 .home .container .container-box {
   display: flex;
@@ -302,24 +316,30 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 9.7rem;
   padding: 5rem 0;
 }
 .clients .subscribe {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background: linear-gradient(270deg, #d71489 0%, #004788 100%);
   padding: 3rem 5rem;
   align-items: center;
+  gap: 24rem;
+  margin: 2rem 0;
 }
 .clients .subscribe .title {
+  width: 100%;
   max-width: 25.8rem;
   color: white;
 }
 .clients .subscribe .input {
   position: relative;
+  width: 100%;
 }
 .clients .subscribe .input input {
+  width: 100%;
+  max-width: 45rem;
   height: 5.8rem;
   outline: none;
   border: none;

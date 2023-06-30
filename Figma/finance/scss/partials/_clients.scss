@@ -8,25 +8,31 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 9.7rem;
         padding: 5rem 0;
     }
     .subscribe {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         background: $gradient;
         padding: 3rem 5rem;
         align-items: center;
+        gap: 24rem;
+        margin: 2rem 0;
 
         .title {
+            width: 100%;
             max-width: 25.8rem;
             color: white;
         }
 
         .input {
             position: relative;
+            width: 100%;
 
             input {
+                width: 100%;
+                max-width: 45rem;
                 height: 5.8rem;
                 outline: none;
                 border: none;
