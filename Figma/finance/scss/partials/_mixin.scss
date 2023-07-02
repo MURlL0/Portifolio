@@ -6,7 +6,6 @@
 }
 
 @mixin btn-home {
-    display: flex;
     padding: 1.5rem 3.6rem;
     flex-direction: column;
     align-items: center;
@@ -15,10 +14,30 @@
 }
 
 @mixin btn-primary {
-    display: flex;
     padding: 1.5rem 4rem;
     align-items: center;
     gap: 1rem;
     border-radius: 0.5rem;
     background: var(--primary-color, #23a6f0);
+}
+
+@mixin checked-green {
+    display: flex;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 1rem 0.8rem 1.1rem 0.8rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20rem;
+    background: var(--success-color, #2dc071);
+}
+@mixin checked-grey {
+    display: flex;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 1rem 0.8rem 1.1rem 0.8rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20rem;
+    background: var(--muted-color, #bdbdbd);
 }
