@@ -41,3 +41,9 @@
     border-radius: 20rem;
     background: var(--muted-color, #bdbdbd);
 }
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
