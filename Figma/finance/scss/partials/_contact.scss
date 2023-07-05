@@ -2,7 +2,7 @@
     @include flex;
     padding-bottom: 3.5rem;
     flex-direction: column;
-    background-color: $background-primary;
+    background: linear-gradient($background-primary, white);
 
     .container {
         @include flex;
@@ -39,21 +39,47 @@
             @include flex;
             padding: 5rem 0;
 
+           
             .login {
-                @include flex;
+                width: 61rem;
+                height: 61rem;
+                display: flex;
+                align-items: center;
+                justify-content: start;
                 flex-direction: column;
-                gap: 4rem;
+                gap: 2rem;
                 background-color: white;
                 padding: 4rem 5rem;
 
+                h3 {
+                    text-align: center;
+                }
+
                 .container_input {
                     width: 100%;
-                    @include flex;
+                    display: flex;
+                    justify-content: flex-start;
                     flex-direction: column;
                     gap: 1rem;
 
                     label {
                         display: block;
+                        margin-bottom: 1rem;
+                    }
+
+                    input {
+                        width: 100%;
+                    }
+
+                    option {
+                        margin-bottom: 1rem;
+                    }
+
+                    button {
+                        margin-top: 4rem;
+                        width: 100%;
+                        @include btn-primary;
+                        color: white;
                     }
                 }
             }

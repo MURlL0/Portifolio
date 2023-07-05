@@ -97,6 +97,19 @@ a {
   letter-spacing: 0rem;
 }
 
+input,
+select {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  background: #f9f9f9;
+  padding: 1.1rem 0;
+  padding-left: 2.1rem;
+}
+
 .header {
   background: transparent;
   width: 100%;
@@ -482,7 +495,7 @@ a {
   align-items: center;
   padding-bottom: 3.5rem;
   flex-direction: column;
-  background-color: #252b42;
+  background: linear-gradient(#252b42, white);
 }
 .contact .container {
   display: flex;
@@ -522,22 +535,120 @@ a {
   padding: 5rem 0;
 }
 .contact .container .container-form .login {
+  width: 61rem;
+  height: 61rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: start;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   background-color: white;
   padding: 4rem 5rem;
+}
+.contact .container .container-form .login h3 {
+  text-align: center;
 }
 .contact .container .container-form .login .container_input {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 1rem;
 }
 .contact .container .container-form .login .container_input label {
   display: block;
+  margin-bottom: 1rem;
+}
+.contact .container .container-form .login .container_input input {
+  width: 100%;
+}
+.contact .container .container-form .login .container_input option {
+  margin-bottom: 1rem;
+}
+.contact .container .container-form .login .container_input button {
+  margin-top: 4rem;
+  width: 100%;
+  padding: 1.5rem 4rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--primary-color, #23a6f0);
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .header_footer {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 19.5rem;
+}
+.footer .header_footer .title {
+  color: #252b42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .header_footer .btn button {
+  padding: 1.5rem 4rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--primary-color, #23a6f0);
+  color: white;
+}
+.footer .list_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #252b42;
+  padding: 5rem 19.5rem;
+  color: white;
+  gap: 3rem;
+}
+.footer .list_footer .list {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .list_footer .list li {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+}
+.footer .list_footer .list li h5 {
+  margin-bottom: 1rem;
+}
+.footer .list_footer .list li a {
+  color: white;
+}
+.footer .list_footer .list.__5 li {
+  gap: 1rem;
+}
+.footer .redes_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 19.5rem;
+}
+.footer .redes_footer h6 {
+  color: #737373;
+}
+.footer .redes_footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }/*# sourceMappingURL=main.css.map */

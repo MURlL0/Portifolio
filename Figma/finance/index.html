@@ -319,7 +319,8 @@
 
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
+
     <div class="container">
       <div class="container-title">
         <div class="title">
@@ -336,42 +337,161 @@
         </div>
       </div>
 
-
       <div class="container-form">
         <div class="image">
           <img src="assets/contact/contact-cover.2.png" alt="">
         </div>
         <div class="login">
           <h3>Book Appointment</h3>
-          <form action=""></form>
-          <form action="" name="login" onsubmit="return validar()">
 
-            <div class="container_input">
-              <div class="input_box">
-                <label for="name">Name *</label>
-                <input type="text" placeholder="Full Name *">
-              </div>
+          <p id="result"></p>
 
-              <div class="input_box">
-                <label for="email">Email address *</label>
-                <input type="email" placeholder="example@gmail.com">
-              </div>
+          <div class="container_input">
 
-              <label for="departement">Departement *</label>
+            <form name="login" onsubmit="return validar()">
+
+              <label>Name *</label>
+              <input name="user" type="text" placeholder="Username">
+
+              <label>Email address *</label>
+              <input name="email" type="email" placeholder="Email">
+
+
+              <label>Departement *</label>
               <select name="departement" id="departement">
-                <option value=""></option>
+                <option selected>Please Select</option>
               </select>
 
-              <label for="time">Time *</label>
+              <label>Time *</label>
               <select name="time" id="time">
-                <option value=""></option>
+                <option value="opcao1" selected>4:00 Available</option>
               </select>
-            </div>
-          </form>
-          <button>Book Appointment</button>
+
+
+              <button onclick="validar()">Book Appointment</button>
+
+            </form>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="footer">
+    <div class="header_footer">
+      <div class="title">
+        <h3>Consulting Agency For Your Business</h3>
+        <p>the quick fox jumps over the lazy dog</p>
+      </div>
+      <div class="btn">
+        <button>Contact Us</button>
+      </div>
+    </div>
+
+    <div class="list_footer">
+      <ul class="list __1">
+        <li>
+          <h5>Company Info</h5>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Carrier</a>
+        </li>
+        <li>
+          <a href="#">We are hiring</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+      </ul>
+
+      <ul class="list __2">
+        <li>
+          <h5>Legal</h5>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Carrier</a>
+        </li>
+        <li>
+          <a href="#">We are hiring</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+      </ul>
+
+      <ul class="list __3">
+        <li>
+          <h5>Features</h5>
+        </li>
+        <li>
+          <a href="#">Business Marketing</a>
+        </li>
+        <li>
+          <a href="#">User Analytic</a>
+        </li>
+        <li>
+          <a href="#">Live Chat</a>
+        </li>
+        <li>
+          <a href="#">Unlimited Support</a>
+        </li>
+      </ul>
+
+      <ul class="list __4">
+        <li>
+          <h5>Resources</h5>
+        </li>
+        <li>
+          <a href="#">IOS & Android</a>
+        </li>
+        <li>
+          <a href="#">Watch a Demo</a>
+        </li>
+        <li>
+          <a href="#">Customers</a>
+        </li>
+        <li>
+          <a href="#">API</a>
+        </li>
+      </ul>
+
+      <ul class="list __5">
+        <li>
+          <h5>Get In Touch</h5>
+        </li>
+        <li>
+          <img src="assets/footer/bx_bx-phone.svg" alt="phone">
+          <h6>(480) 555-0103</h6>
+        </li>
+        <li>
+          <img src="assets/footer/bx_bx-map.svg" alt="map">
+          <h6>4517 Washington Ave.</h6>
+        </li>
+        <li>
+          <img src="assets/footer/carbon_send-alt.svg" alt="email">
+          <h6>debra.holt@example.com</h6>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="redes_footer">
+
+      <h6>Made With Love By Figmaland All Right Reserved</h6>
+
+      <div class="icons">
+        <img src="assets/footer/ant-design_facebook-filled.svg" alt="facebook">
+        <img src="assets/footer/ant-design_instagram-outlined.svg" alt="instagram">
+        <img src="assets/footer/ant-design_twitter-outlined.svg" alt="twitter">
+      </div>
+    </div>
+
   </section>
 
 
