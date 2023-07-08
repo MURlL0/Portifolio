@@ -7,6 +7,10 @@
     flex-direction: column;
     gap: 8rem;
 
+    @media (max-width: 600px) {
+        padding: 3rem 4.2rem;
+    }
+
     .title {
         max-width: 60.7rem;
         color: white;
@@ -28,22 +32,42 @@
         gap: 13.7rem;
         margin: 4rem 0;
 
+        @media (max-width: 1070px) {
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 45rem));
+            gap: 3rem;
+        }
+
         .box {
             padding: 3rem 4rem;
             background: white;
             position: relative;
 
-            .perfil {
-                position: absolute;
-                left: -45px;
-            }
-            h3 {
-                color: $background_primary;
-            }
+            .container-perfil {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
 
-            p,
-            h6 {
-                color: #737373;
+                .perfil {
+                    position: absolute;
+                    left: -45px;
+
+                    @media (max-width: 600px) {
+                        position: relative;
+                        left: 0;
+                    }
+                }
+
+                .box-title {
+                    h3 {
+                        color: $background_primary;
+                    }
+
+                    p,
+                    h6 {
+                        color: #737373;
+                    }
+                }
             }
 
             .stars {

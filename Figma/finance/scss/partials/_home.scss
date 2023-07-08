@@ -3,6 +3,7 @@
     background-size: cover;
     background-position: center;
 
+
     .bg {
         background: rgba(0, 0, 0, 0.5);
         padding: 0 3rem;
@@ -16,6 +17,9 @@
         padding: 8rem 0;
         color: white;
         gap: 8rem;
+        @media (max-width: 600px) {
+            gap: 4rem;
+        }
 
         .title {
             width: 100%;
@@ -31,6 +35,11 @@
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
+
+                @media (max-width: 600px) {
+                    gap: 3rem;
+                    flex-direction: column;
+                }
 
                 button {
                     @include btn-home;

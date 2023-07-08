@@ -3,6 +3,10 @@
     padding-bottom: 3.5rem;
     flex-direction: column;
     background: linear-gradient($background-primary, white);
+    @media (max-width: 600px) {
+        background: $background-primary !important;
+        padding: 0;
+    }
 
     .container {
         @include flex;
@@ -11,11 +15,23 @@
         gap: 5rem;
         flex-direction: column;
 
+        @media (max-width: 600px) {
+            padding: 3rem 0 0;
+            gap: 6rem;
+        }
+
         .container-title {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 4rem;
+
+            @media (max-width: 900px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                gap: 3rem;
+            }
 
             .title {
                 @include flex;
@@ -28,10 +44,15 @@
                 p {
                     max-width: 45.6rem;
                 }
+
+                @media (max-width: 900px) {
+                    text-align: center;
+                    padding: 5rem 5rem;
+                }
             }
 
             .left-img {
-                padding: 5rem 0;
+                padding: 5rem 5rem;
             }
         }
 
@@ -39,9 +60,29 @@
             @include flex;
             padding: 5rem 0;
 
-           
+            @media (max-width: 800px) {
+                flex-wrap: wrap;
+                padding: 0;
+            }
+
+            .image {
+                .mobile {
+                    display: none;
+                }
+
+                @media (max-width: 415px) {
+                    .web {
+                        display: none;
+                    }
+                    .mobile {
+                        display: block;
+                    }
+                }
+            }
+
             .login {
-                width: 61rem;
+                width: 100%;
+                max-width: 61rem;
                 height: 61rem;
                 display: flex;
                 align-items: center;
@@ -51,8 +92,25 @@
                 background-color: white;
                 padding: 4rem 5rem;
 
-                h3 {
-                    text-align: center;
+                @media (max-width: 900px) {
+                    flex-wrap: wrap;
+                    height: auto;
+                }
+
+                .title-login {
+                    .title_mobile {
+                        display: none;
+                    }
+
+                    @media (max-width: 600px) {
+                        .title_mobile {
+                            display: block;
+                            text-align: center;
+                        }
+                        .title_web {
+                            display: none;
+                        }
+                    }
                 }
 
                 .container_input {

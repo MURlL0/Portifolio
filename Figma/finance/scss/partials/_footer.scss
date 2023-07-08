@@ -10,6 +10,14 @@
         align-items: center;
         padding: 4rem 19.5rem;
 
+        @media (max-width: 900px) {
+            flex-wrap: wrap;
+            padding: 4rem 6.1rem;
+            justify-content: center;
+            gap: 5rem;
+            text-align: center;
+        }
+
         .title {
             color: $background-primary;
             @include flex;
@@ -34,6 +42,12 @@
         padding: 5rem 19.5rem;
         color: white;
         gap: 3rem;
+
+        @media (max-width: 900px) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 5rem 8.8rem;
+        }
 
         .list {
             display: flex;
@@ -68,6 +82,20 @@
         justify-content: space-between;
         align-items: center;
         padding: 2.5rem 19.5rem;
+        gap: 3rem;
+
+        @media (max-width: 700px) {
+            flex-wrap: wrap;
+            padding: 2.5rem 0 5.5rem;
+            justify-content: center;
+            text-align: center;
+            gap: 5rem;
+            max-width: 23rem;
+
+            h6 {
+                color: #252b42 !important;
+            }
+        }
 
         h6 {
             color: #737373;

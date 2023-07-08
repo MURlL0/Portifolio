@@ -11,6 +11,10 @@
     align-items: center;
     gap: 1rem;
     border-radius: 3.7rem;
+
+    &:active {
+        transform: scale(1.04);
+    }
 }
 
 @mixin btn-primary {
@@ -18,7 +22,14 @@
     align-items: center;
     gap: 1rem;
     border-radius: 0.5rem;
-    background: var(--primary-color, #23a6f0);
+    background: $color-primary;
+    transition: all 200ms;
+
+    &:active {
+        transform: scale(1.04);
+        background: #16628e;
+        transition: all 200ms;
+    }
 }
 
 @mixin checked-green {
