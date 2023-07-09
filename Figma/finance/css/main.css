@@ -663,7 +663,7 @@ select {
   align-items: center;
   padding: 5rem 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .contact .container .container-form {
     flex-wrap: wrap;
     padding: 0;
@@ -681,7 +681,6 @@ select {
   }
 }
 .contact .container .container-form .login {
-  width: 100%;
   max-width: 61rem;
   height: 61rem;
   display: flex;
@@ -692,10 +691,11 @@ select {
   background-color: white;
   padding: 4rem 5rem;
 }
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .contact .container .container-form .login {
     flex-wrap: wrap;
     height: auto;
+    width: 100%;
   }
 }
 .contact .container .container-form .login .title-login .title_mobile {

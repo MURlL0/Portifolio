@@ -3,6 +3,7 @@
     padding-bottom: 3.5rem;
     flex-direction: column;
     background: linear-gradient($background-primary, white);
+
     @media (max-width: 600px) {
         background: $background-primary !important;
         padding: 0;
@@ -60,7 +61,7 @@
             @include flex;
             padding: 5rem 0;
 
-            @media (max-width: 800px) {
+            @media (max-width: 900px) {
                 flex-wrap: wrap;
                 padding: 0;
             }
@@ -81,7 +82,7 @@
             }
 
             .login {
-                width: 100%;
+                
                 max-width: 61rem;
                 height: 61rem;
                 display: flex;
@@ -92,9 +93,10 @@
                 background-color: white;
                 padding: 4rem 5rem;
 
-                @media (max-width: 900px) {
+                @media (max-width: 700px) {
                     flex-wrap: wrap;
                     height: auto;
+                    width: 100%;
                 }
 
                 .title-login {
