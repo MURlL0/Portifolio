@@ -855,4 +855,23 @@ select {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+.header_mobile {
+  background-color: #252b42;
+  width: 100%;
+  padding: 4rem;
+}
+.header_mobile .container_mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.header_mobile .container_mobile ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
 }/*# sourceMappingURL=main.css.map */

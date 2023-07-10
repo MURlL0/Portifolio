@@ -1,0 +1,16 @@
+.header_mobile {
+    background-color: $background-primary;
+    width: 100%;
+    padding: 4rem;
+
+    .container_mobile {
+        @include flex;
+        justify-content: space-between;
+        color: white;
+
+        ul {
+            @include flex;
+            gap: 2.5rem;
+        }
+    }
+}
