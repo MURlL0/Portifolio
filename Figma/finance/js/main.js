@@ -55,3 +55,30 @@ function validar() {
         return false;
     }
 }
+
+const hamburger = document.querySelector('#hamburger');
+const menu = document.querySelector('#menu');
+
+let active = false;
+
+function openClose() {
+    if (active === false) {
+        active = true;
+        menu.classList.add('active');
+    } else if (active === true) {
+        active = false;
+        menu.classList.remove('active');
+    }
+}
+
+hamburger.onclick = openClose;
+
+function closeMenu() {
+    menu.classList.remove('active');
+}
+
+menu.addEventListener('click', function (event) {
+    if (event.target.tagName === 'A') {
+        closeMenu();
+    }
+});

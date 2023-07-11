@@ -58,3 +58,13 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin text_menu {
+    color: var(--light-text-color, #fff);
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: 0rem;
+}

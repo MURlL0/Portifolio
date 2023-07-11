@@ -1,9 +1,19 @@
 .header_mobile {
     background-color: $background-primary;
-    width: 100%;
+    z-index: 100;
     padding: 4rem;
+    position: fixed;
+    @include flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 7rem;
+
+    @media (min-width: 901px) {
+        display: none;
+    }
 
     .container_mobile {
+        width: 100%;
         @include flex;
         justify-content: space-between;
         color: white;
@@ -11,6 +21,53 @@
         ul {
             @include flex;
             gap: 2.5rem;
+        }
+    }
+
+    .list_mobile {
+        z-index: -2;
+        background-color: $background-primary;
+        width: 100%;
+        position: absolute;
+        top: -250%;
+        opacity: 1;
+        transition: all 500ms linear;
+
+        ul {
+            z-index: -2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 3rem;
+
+            a {
+                @include text_menu;
+                transition: color 200ms linear;
+                color: $background-primary;
+            }
+        }
+    }
+    .list_mobile.active {
+        z-index: -2;
+        background-color: $background-primary;
+        width: 100%;
+        top: 100%;
+        opacity: 1;
+        transition: all 500ms linear;
+        padding: 5.8rem 0 9.8rem;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 3rem;
+
+            a {
+                @include text_menu;
+                transition: color 600ms linear;
+            }
         }
     }
 }
