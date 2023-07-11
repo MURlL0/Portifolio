@@ -23,6 +23,10 @@
             gap: 2.5rem;
             position: relative;
 
+            li {
+                cursor: pointer;
+            }
+
             .icon {
                 transition: all 100ms linear;
                 opacity: 0;
