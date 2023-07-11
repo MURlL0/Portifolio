@@ -58,6 +58,7 @@ function validar() {
 
 const hamburger = document.querySelector('#hamburger');
 const menu = document.querySelector('#menu');
+const icon = document.querySelector('#icon');
 
 let active = false;
 
@@ -65,16 +66,23 @@ function openClose() {
     if (active === false) {
         active = true;
         menu.classList.add('active');
+        hamburger.classList.add('active');
+        icon.classList.add('active');
     } else if (active === true) {
         active = false;
         menu.classList.remove('active');
+        hamburger.classList.remove('active');
+        icon.classList.remove('active');
     }
 }
 
 hamburger.onclick = openClose;
+icon.onclick = openClose;
 
 function closeMenu() {
     menu.classList.remove('active');
+    hamburger.classList.remove('active');
+    icon.classList.remove('active');
 }
 
 menu.addEventListener('click', function (event) {

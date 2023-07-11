@@ -21,6 +21,37 @@
         ul {
             @include flex;
             gap: 2.5rem;
+            position: relative;
+
+            .icon {
+                transition: all 100ms linear;
+                opacity: 0;
+                position: absolute;
+                right: 2.4rem;
+                top: 0;
+            }
+
+            .icon.active {
+                transition: all 500ms linear;
+                opacity: 1;
+                position: absolute;
+                right: 2.4rem;
+                top: 0;
+            }
+
+            .hamburger {
+                opacity: 1;
+                transition: all 500ms linear;
+            }
+
+            .hamburger.active {
+                opacity: 0;
+                transition: all 100ms linear;
+            }
+        }
+
+        #hamburger:active {
+            transform: scale(1.2);
         }
     }
 
