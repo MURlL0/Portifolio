@@ -31,10 +31,10 @@
 <br>
 
 <div align="center">
-<img src="URL DO VIDEO" alt="gif do Site" width="1012"> 
+<img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/finance/assets/screenshot/ezgif.com-video-to-gif%20(3).gif?raw=true" alt="gif do Site" width="1012"> 
 </div>
 
 
 <h3 align="center">LINK:
----'LINK'---
+https://murll0.github.io/finance
 </h3>
