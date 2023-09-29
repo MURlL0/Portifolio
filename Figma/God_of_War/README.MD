@@ -9,7 +9,7 @@
 
 - [Screenshots](#Screenshots)
 - [Responsividade](#Responsividade)
-- [Links](#LINK)
+- [Link](#LINK)
 
 ## Screenshots
 
@@ -30,4 +30,5 @@
   <img src="./assets/img-md/giphy.gif" alt="gif1" width="100%">
 </div>
 
-### LINK: http://murll0.github.io/God_of_War
+### LINK
+http://murll0.github.io/God_of_War
