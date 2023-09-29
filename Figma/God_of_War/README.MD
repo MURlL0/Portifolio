@@ -8,8 +8,8 @@
 ## Resumo
 
 - [Screenshots](#Screenshots)
-- [Visão Geral/Responsividade](#VisãoGeral/Responsividade)
-- [Links](#LINK:)
+- [Responsividade](#Responsividade)
+- [Links](#LINK)
 
 ## Screenshots
 
@@ -22,7 +22,7 @@
 
 </br>
 
-## Visão Geral/Responsividade
+## Responsividade
 
 </br>
 
