@@ -9,7 +9,7 @@
 
 - [Screenshots](#Screenshots)
 - [Visão Geral/Responsividade](#VisãoGeral/Responsividade)
-- [Links](#LINK)
+- [Links](#LINK:)
 
 ## Screenshots
 
@@ -22,7 +22,7 @@
 
 </br>
 
-## <center> Visão Geral/Responsividade </center>
+## Visão Geral/Responsividade
 
 </br>
 
