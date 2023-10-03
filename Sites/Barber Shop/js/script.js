@@ -29,3 +29,13 @@ function openMenu() {
         dropdown.classList.add('open');
     }
 }
+
+function closeMenu() {
+    dropdown.classList.remove('open');
+}
+
+dropdown.addEventListener('click', function (event) {
+    if (event.target.tagName === 'A') {
+        closeMenu();
+    }
+});
