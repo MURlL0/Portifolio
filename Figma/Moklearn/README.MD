@@ -3,29 +3,33 @@
 <p align="center">Este projeto consiste em um site que foi desenvolvido utilizando HTML e SCSS, com base em um design obtido no Figma. O objetivo era transformar o design em um site funcional e responsivo.
 </p>
 
-<br>
+</br>
 
-<h2 align="center">Screenshots</h2>
-<br>
+## Resumo
 
-<div align="center">
- <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(0).png?raw=true" >
- <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(1).png?raw=true" >
- <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(2).png?raw=true" >
- <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(3).png?raw=true" >
- <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(4).png?raw=true" >
- <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(5).png?raw=true" >
- <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(5).png?raw=true" >
- <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(6).png?raw=true" >
- <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(7).png?raw=true" >
- <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/127.0.0.1_5500_Developer%2520Full%2520Stack_Projetos_Estudos_Figma_Moklearn_index.html%20(8).png?raw=true" >
-</div>
+- [Screenshots](#Screenshots)
+- [Responsividade](#Responsividade)
+- [Link](#LINK)
 
-<br>
+## Screenshots
 
-<h2 align="center">Visão Geral/Responsividade</h2>
+</br>
 
-<br>
+![img1](./assets/screenshot/image1.png)
+![img2](./assets/screenshot/image2.png)
+![img3](./assets/screenshot/image3.png)
+![img4](./assets/screenshot/image4.png)
+![img5](./assets/screenshot/image5.png)
+![img6](./assets/screenshot/image6.png)
+![img7](./assets/screenshot/image7.png)
+![img8](./assets/screenshot/image8.png)
+![img9](./assets/screenshot/image9.png)
+
+</br>
+
+## Responsividade
+
+</br>
 
 <div align="center">
 <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/ezgif.com-video-to-gif%20(1).gif?raw=true" alt="gif do Site" width="1012"> 
@@ -33,7 +37,6 @@
 <img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/ezgif.com-video-to-gif.gif?raw=true" alt="gif do Site" width="1012"> 
 </div>
 
+### LINK
 
-<h3 align="center">LINK: 
 https://murll0.github.io/Moklearn/
-</h3>
