@@ -32,9 +32,11 @@
 </br>
 
 <div align="center">
-<img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/ezgif.com-video-to-gif%20(1).gif?raw=true" alt="gif do Site" width="1012"> 
+<img src="assets/screenshot/gif_1.gif" alt="gif do Site" width="100%"> 
 
-<img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/Moklearn/assets/screenshot/ezgif.com-video-to-gif.gif?raw=true" alt="gif do Site" width="1012"> 
+</br>
+
+<img src="assets/screenshot/gif_2.gif" alt="gif do Site" width="100%"> 
 </div>
 
 ### LINK
