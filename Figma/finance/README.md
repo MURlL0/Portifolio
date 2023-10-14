@@ -29,7 +29,7 @@
 </br>
 
 <div align="center">
-<img src="https://github.com/MURlL0/Portifolio/blob/main/Figma/finance/assets/screenshot/ezgif.com-video-to-gif%20(3).gif?raw=true" alt="gif do Site" width="100%"> 
+<img src="assets/screenshot/gif_.gif" alt="gif do Site" width="100%"> 
 </div>
 
 ### LINK
