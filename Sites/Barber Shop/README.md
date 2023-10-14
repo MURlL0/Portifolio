@@ -26,7 +26,7 @@
 </br>
 
 <div style="text-align: center;">
-<img src="./assets/Responsivo.gif" alt="gif do Site" width="100%"> 
+<img src="./assets/gif_.gif" alt="gif do Site" width="100%"> 
 </div>
 
 ### LINK
