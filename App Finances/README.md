@@ -25,7 +25,8 @@
 ![img1](./assets/screenshot/img.png)  
 ![img2](./assets/screenshot/img1.png)  
 ![img3](./assets/screenshot/img2.png)  
-![video](./assets/screenshot/gif1.gif)  
+<div style="text-align: center;">
+<img src="./assets/screenshot/gif1.gif" alt="gif do Site" width="100%">   
 
 </br>
 
