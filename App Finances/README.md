@@ -39,4 +39,5 @@
 </div>
 
 ### Live Link
-https://murll0.github.io/finances_app/
+<a href="https://murll0.github.io/finances_app/" target="_blank">Link para o aplicativo de finanças</a>
+
