@@ -10,7 +10,7 @@ const closeMenu = () => {
 
 const onLogout = () => {
     localStorage.clear();
-    window.open('../../avançado/index.html', '_self');
+    window.open('../index.html', '_self');
 };
 
 const menuAdd = document.querySelector('#menuAdd');
