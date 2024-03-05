@@ -1,40 +1,37 @@
 function validar() {
-    if (document.login.user.value == '') {
-        document.getElementById('result').innerHTML = 'Enter Username';
-        return false;
-    }
-    if (document.login.user.value.length < 6) {
-        document.getElementById('result').innerHTML = 'enter 6 digits minimum';
-        return false;
-    }
-    if (document.login.email.value == '') {
-        document.getElementById('result').innerHTML = 'Enter Email';
-        return false;
-    }
-    if (document.login.password.value == '') {
-        document.getElementById('result').innerHTML = 'Enter Password';
-        return false;
-    }
-    if (document.login.password.value.length < 6) {
-        document.getElementById('result').innerHTML = 'Enter 6 digits minimum';
-        return false;
-    }
-    if (document.login.cpassword.value == '') {
-        document.getElementById('result').innerHTML =
-            'Enter password confirmation';
-        return false;
-    }
-    if (document.login.password.value !== document.login.cpassword.value) {
-        document.getElementById('result').innerHTML = 'Different password';
-        return false;
-    }
-    if (document.login.password.value == document.login.cpassword.value) {
-        popup.classList.add('open-slide');
-        return false;
-    }
+  const userValue = document.login.user.value;
+  const emailValue = document.login.email.value;
+  const passwordValue = document.login.password.value;
+  const cpasswordValue = document.login.cpassword.value;
+
+  document.getElementById('result').innerHTML =
+    userValue === ''
+      ? 'Enter Username'
+      : userValue.length < 6
+      ? 'Enter at least 6 characters for username'
+      : emailValue === ''
+      ? 'Enter Email'
+      : passwordValue === ''
+      ? 'Enter Password'
+      : passwordValue.length < 6
+      ? 'Enter at least 6 characters for password'
+      : cpasswordValue === ''
+      ? 'Enter password confirmation'
+      : passwordValue !== cpasswordValue
+      ? 'Passwords do not match'
+      : '';
+
+  if (document.getElementById('result').innerHTML !== '') {
+    return false;
+  }
+
+  const popup = document.getElementById('popup');
+  popup.classList.add('open-slide');
+  return false;
 }
 
-const popup = document.getElementById('popup');
 function closeSlide() {
-    popup.classList.remove('open-slide');
+  const popup = document.getElementById('popup');
+  popup.classList.remove('open-slide');
+  window.open('../login-future/html/login.html');
 }
